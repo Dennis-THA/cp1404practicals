@@ -22,14 +22,14 @@ def main():
 
 
 def display_stars(score):
-    """This function is to display stars based on score"""
+    """This function is to display stars based on score."""
     for i in range(score):
         print('*', end='')
     print()
 
 
 def determine_result(score):
-    """This function is to determine the result based on the score"""
+    """This function is to determine the result based on the score."""
     if score >= 90:
         result = "Excellent"
     elif score >= 50:
