@@ -5,7 +5,7 @@ MAXIMUM_SCORE = 100
 
 
 def main():
-    score = int(input("Enter score: "))
+    score = float(input("Enter score: "))
     result = determine_result(score)
     random_score = random.randint(MINIMUM_SCORE, MAXIMUM_SCORE)
     print(f"Random score is {random_score}")
