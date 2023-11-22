@@ -24,12 +24,14 @@ def main():
 
 
 def farenheit_to_celsius():
+    """This function is to change farenheit to celsius"""
     fahrenheit = float(input("Fahrenheit: "))
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
 
 
 def celsius_to_farenheit():
+    """This function is to change celsius to farenheit"""
     celsius = float(input("Celsius: "))
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
