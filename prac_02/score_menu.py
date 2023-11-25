@@ -29,7 +29,7 @@ def display_stars(score):
 
 
 def determine_result(score):
-    """This function is to determine the result based on the score."""
+    """This function is to determine the result based on the score.3"""
     if score >= 90:
         result = "Excellent"
     elif score >= 50:
