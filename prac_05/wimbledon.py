@@ -14,7 +14,7 @@ def main():
 
 
 def display_result(champions_to_count, countries):
-    """Display the result of champions and countries"""
+    """Display the result of champions and countries """
     print("Wimbledon Champions: ")
     for name, frequency in champions_to_count.items():
         print(name, frequency)
