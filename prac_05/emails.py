@@ -1,6 +1,6 @@
 
 def main():
-    """Dictionary of email and names"""
+    """Dictionary of email and names."""
     email_to_name = {}
     email = input("Email: ")
 

@@ -7,12 +7,14 @@ filename = "wimbledon.csv"
 
 
 def main():
+    """Extract data from a file and print results about champions and countries that won Wimbledon """
     records = get_record()
     champions_to_count, countries = process_data(records)
     display_result(champions_to_count, countries)
 
 
 def display_result(champions_to_count, countries):
+    """Display the result of champions and countries"""
     print("Wimbledon Champions: ")
     for name, frequency in champions_to_count.items():
         print(name, frequency)
@@ -21,6 +23,7 @@ def display_result(champions_to_count, countries):
 
 
 def process_data(records):
+    """Process the data of champions and countries """
     champions_to_count = {}
     countries = set()
     for record in records:
@@ -33,6 +36,7 @@ def process_data(records):
 
 
 def get_record():
+    """Get the record from a file"""
     records = []
     with open(filename, "r", encoding="utf-8-sig") as in_file:
         in_file.readline()
