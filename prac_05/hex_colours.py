@@ -10,4 +10,3 @@ while colour_name != "":
     colour_name = input("Enter colour name: ")
 
 
-
