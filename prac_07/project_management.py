@@ -30,10 +30,18 @@ def main():
     print("Thank you for using custom-built project management software.")
 
 
+def get_valid_name():
+    name = input("Name: ")
+    while name == "":
+        print("Name must not be empty!")
+        name = input("Name: ")
+    return name
+
+
 def add_projects():
     """Add new projects"""
     print(f"Let's add a new project")
-    name = input("Name: ")
+    name = get_valid_name()
     start_date = input("Start date (dd/mm/yy): ")
     start_date = datetime.datetime.strptime(start_date, "%d/%m/%Y").date()
     priority = int(input("Priority: "))
