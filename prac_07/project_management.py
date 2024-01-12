@@ -3,6 +3,10 @@ from prac_07.project import Project
 
 MENU = ("(L)oad projects\n(S)ave projects\n(D)isplay projects\n(F)ilter projects by date\n(A)dd new project\n"
         "(U)pdate project\n(Q)uit")
+
+=======
+FILENAME = "projects.txt"
+
 projects = []
 
 
@@ -11,11 +15,16 @@ def main():
     choice = input(">>>: ").upper()
     while choice != "Q":
         if choice == "L":
+
             filename = get_valid_name()
             load_projects(filename)
         elif choice == "S":
             filename = get_valid_name()
             save_projects(filename)
+=======
+            load_projects(FILENAME)
+        elif choice == "S":
+            save_projects(FILENAME)
         elif choice == "D":
             display_projects()
         elif choice == "F":
